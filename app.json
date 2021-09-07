@@ -1,0 +1,88 @@
+{
+    "name": "David",
+    "logo": "https://telegra.ph/file/81f10f739947b05d02c4c.jpg",
+    "description": "UFO Music Voice Chat.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/MusicCall/FilesMusic",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "حط كود الجلســـة مالتك !!",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "توكــن بوتـــك !",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "إســـم بوتــك !.",
+            "required": false,
+            "value": ""
+        },
+        "BOT_USERNAME": {
+            "description": "يوزر نيــم بوتــك منغيــر -> @",
+            "required": true,
+            "value": "MusicRioBot"
+        },
+        "ASSISTANT_NAME": {
+            "description": "يوزر نيــم حساب مساعد منغيــر ->  @",
+            "required": true,
+            "value": "xRioMusic"
+        },
+        "BG_IMAGE": {
+            "description": "خلــفية",
+            "required": false,
+            "value": "https://telegra.ph/file/81f10f739947b05d02c4c.jpg"
+        },
+        "THUMB_IMG": {
+            "description": "سيبــها زي مهي عادي يبا -> bg_image",
+            "required": false,
+            "value": "https://telegra.ph/file/81f10f739947b05d02c4c.jpg"
+        },
+        "OWNER_NAME": {
+            "description": "حط يوزركـــ منغــير -> @",
+            "required": false,
+            "value": "xRioMusic"
+        },
+        "API_ID": {
+            "description": "حــط App ID from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "حــط Api hash from my.telegram.org/apps",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "قايــمة الســودو",
+            "required": true
+        },
+        "DURATION_LIMIT": {
+            "description": "max",
+            "required": true,
+            "value": "60"
+        },
+        "PMPERMIT": {
+            "description": "سيــبها.",
+            "required": false,
+            "value": "ENABLE"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "تحديثاتــ سورس يــوفـــو !!!",
+            "required": false,
+            "value": "L9L9L"
+        },
+        "GROUP_SUPPORT": {
+            "description": "جروبــ الدعــم",
+            "required": false,
+            "value": "L9L9L"
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
